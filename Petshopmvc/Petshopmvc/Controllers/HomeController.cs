@@ -6,18 +6,17 @@ using System.Web.Mvc;
 
 using DHTMLX.Scheduler;
 
-namespace Petshopmvc.Controllers
+namespace AppointmentCalendar.Controllers
 {
     public class HomeController : Controller
     {
         //
-        // GET: /Home/
-        public ActionResult Index()
+        // GET: /Calendar/
+        public ActionResult CALENDAR()
         {
             var scheduler = new DHXScheduler(this);
             scheduler.Skin = DHXScheduler.Skins.Flat;
             return View(scheduler);
         }
-
     }
 }
